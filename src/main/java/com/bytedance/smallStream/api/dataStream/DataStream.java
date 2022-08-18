@@ -8,17 +8,22 @@ public class DataStream<T> {
 
 
     // map 打散
-    public <OUT> DataStream map() {
+    public <R> SingleOutputStreamOperator<R> map() {
         return null;
     }
 
     // 根据key分区
-    public <OUT> DataStream keyBy() {
+    public <K> KeyedStream<T, K> keyBy() {
         return null;
     }
 
     // 添加Sink端数据源对象
     public DataStreamSink<T> addSink() {
+        return null;
+    }
+
+    // 输出
+    public DataStreamSink<T> print() {
         return null;
     }
 

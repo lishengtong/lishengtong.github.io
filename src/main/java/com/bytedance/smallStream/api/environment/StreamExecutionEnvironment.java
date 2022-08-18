@@ -8,7 +8,11 @@ import com.bytedance.smallStream.api.dataStream.DataStreamSource;
  */
 public class StreamExecutionEnvironment {
 
-    // 添加源数据对象 返回数据流
+    /**
+     * 添加源数据对象 返回数据流
+     * @return
+     * @param <OUT>
+     */
     public <OUT> DataStreamSource<OUT> addSource() {
         return null;
     }
@@ -16,5 +20,9 @@ public class StreamExecutionEnvironment {
     // 获取流处理器
     public static StreamExecutionEnvironment getExecutionEnvironment() {
         return null;
+    }
+
+    public void execute(String name) {
+        // 物理图
     }
 }
